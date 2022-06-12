@@ -1,4 +1,11 @@
-<table mat-table [dataSource]="courses" class="mat-elevation-z8">
+
+<mat-card>
+
+  <mat-toolbar color="primary">
+    Cursos disponiveis
+  </mat-toolbar>
+
+  <table mat-table [dataSource]="courses" class="mat-elevation-z8">
 
 
     <!-- Name Column -->
@@ -18,4 +25,4 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
 
-
+</mat-card>
